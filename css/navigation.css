@@ -1,0 +1,54 @@
+.navigation {
+    display: flex;
+    position: absolute;
+    top : 100%;
+    right :10px;
+   background-color: gray;
+   gap: 5px;
+   padding: 10px;
+   flex-direction: column;
+   /*
+   top: 
+   bottom:
+   position:
+   */
+
+   transform : translateY(-230%);
+   transition : transform .25s;
+}
+#burger {
+    margin-left: auto; /* utilise l'espace restant à gauche de la navigation*/
+}
+.navigation a {
+    color : black;
+}
+/* pour rendre la case à cocher invisible */
+#chk_burger {
+    display : none; 
+}
+/*
+https://www.w3schools.com/cssref/css_selectors.php
+
+
+opérateur de sélection
+epace « »  main div (permet de sélectionner tous les div inclus dans main)
+plus grand « > »  main > div (permet de sélectionner tous les div qui ont comme parent direct main )
+plus « + » main + p (permet de sélectionner le premier «p» situé après la balise main)
+vague « ~ » main ~ p (permet de sélectionner tous les «p» situés apre`s main)
+*/
+
+/*
+si la case à côcher #chk_burger est côché alors on sélectionne le conteneur .navigation.
+La règle de style formatera .navigation
+*/
+
+#chk_burger:checked  ~ .navigation {
+    transform : translateY(0);
+   
+}
+
+
+/* référence des fonctions CSS 
+https://css-tricks.com/complete-guide-to-css-functions/
+*/
+

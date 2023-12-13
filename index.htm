@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/formulaire.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/entete.css">
+    <link rel="stylesheet" href="css/piedpage.css">
+</head>
+<body>
+    <div id="entete">
+        <header>
+            <!-- 
+                Pour crééer rapidement un logo
+                https://www.canva.com/templates/?query=logo  
+            -->
+
+            <div class="entete__logo">
+                <img src="./images/logo.png" alt="">
+                <h1>TP2</h1> 
+            </div>
+            <!-- https://svgbox.net/ -->
+            <!--
+                id peut être utilisée une seule fois dans le document
+                La même classe  peut être utiliser plusieurs fois 
+            -->
+
+            <div class="entete__burger">
+                <label id="burger" for="chk_burger">
+                    <img src="https://s2.svgbox.net/hero-outline.svg?ic=menu-alt-1&color=000" width="32" height="32">
+                </label>
+                <input type="checkbox" id="chk_burger">
+                <nav class="navigation">
+                    <a href="#accueil">Accueil</a>
+                    <a href="#horaire">Horaire</a>
+                    <a href="#inscription">Inscription</a> 
+                </nav>
+            </div>
+        </header> 
+    </div> <!-- fin .entete -->
+   <div id="accueil">
+    <section >
+        <h2>Accueil</h2>
+        <h3>Page d'acceuil du site </h3>
+        <ul>
+            <li>Christian Goran</li>
+            <li>582-1W1 – Mise en page Web</li>
+            <li>Techniques d’intégration multimédia</li>
+            <li>Collège de Maisonneuve</li>
+            <li>Automne 2023</li>
+            <a href="https://github.com/Christian-Goran">github</a>
+        </ul>
+    </section>
+   </div> <!-- fin #accueil -->
+   <div id="horaire">
+    <section>
+        <h2>Horaire</h2>
+        <h3>horaire de l'élève</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit optio quae voluptate mollitia architecto quibusdam illum natus eum excepturi recusandae alias assumenda iusto, itaque fugiat molestiae facere? Impedit, ea. Illo!</p>
+        <table>
+            <tr>
+                <th></th>
+                <th>LUN</th>
+                <th>MAR</th>
+                <th>MER</th>
+                <th>JEU</th>
+                <th>VEN</th>
+            </tr>
+        <tr>
+            <th>8h</th>
+            <td></td>
+            <td class="cours">Francais</td>
+            <td class="cours">Création Vidéo</td>
+            <td class="cours">Mise en page Web</td>
+            <td class="cours"> Création vidéo</td>
+        </tr>
+        <tr>
+            <th>9h</th>
+            <td class="cours">1w1</td>
+            <td class="cours">Francais</td>
+            <td class="cours">Création Vidéo</td>
+            <td class="cours">Mise en page Web</td>
+            <td class="cours">Création Vidéo</td>
+        </tr>
+        <tr>
+            <th>10h</th>
+            <td class="cours">1w1</td>
+            <td></td>
+            <td class="cours">Création Vidéo</td>
+        </tr>
+        <tr>
+            <th>11h</th>
+            <td class="cours">1w1</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>12h</th>
+            <td class="cours">Natation</td>
+            <td class="cours">Pause commune</td>
+            <td class="cours">Conception graphique</td>
+            <td class="cours">Pause commune</td>
+            <td class="cours">Écriture et litérature</td>
+        </tr>
+        <tr>
+            <th>13h</th>
+            <td class="cours">Natation</td>
+            <td class="cours">Pause commune</td>
+            <td class="cours">Conception graphique</td>
+            <td class="cours">Pause commune</td>
+            <td class="cours">Écriture et litérature</td>
+        </tr>
+        <tr>
+            <th>14h</th>
+            <td></td>
+            <td class="cours"> Conception graphique</td>
+            <td class="cours">Conception graphique</td>
+            <td class="cours">Animation et intéractivité</td>
+        </tr>
+        <tr>
+            <th>15h</th>
+            <td class="cours">1j1</td>
+            <td class="cours">Conception graphique</td>
+            <td class="cours">Anglais</td>
+            <td class="cours">Animation et intéractivité</td>
+        </tr>
+        <tr>
+            <th>16h</th>
+            <td class="cours">1j1</td>
+            <td class="cours">Conception graphique</td>
+            <td class="cours">Anglais</td>
+            <td class="cours">Animation et intéractivité</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>17h</th>
+            <td class="cours">1j1</td>
+            <td></td>
+            <td class="cours">Anglais</td>
+            <td></td>
+            <td></td>
+    
+        </tr>
+        </table>
+    </section>
+   </div> <!-- fin #horaire -->
+   <div id="inscription">
+    <section>
+        <h2>Inscription</h2>
+        <!-- https://www.w3schools.com/html/html_forms.asp -->
+         <form action="" class="formulaire">
+            <label class="form__nom" for="">Nom<input type="text"></label>
+            <label class="form__prenom" for="">Nom<input type="text"></label>
+           <fieldset class="langage">
+            <legend>Langage</legend>
+            <label for="chk__html">HTML<input id="chk__html" type="checkbox"  id=""></label>
+            <label for="">CSS<input type="checkbox"  id=""></label>
+            <label for="">JS<input type="checkbox"  id=""></label>
+            <label for="">PHP<input type="checkbox"  id=""></label>
+            <label for="">MySQL<input type="checkbox"  id=""></label>
+            <label for="">Wordpress<input type="checkbox"  id=""></label>
+        </fieldset>
+        <fieldset>
+            <!-- Pour les radio bouton on créé un groupe en utilisant
+                 la même valeur pour l'attribut name  -->
+            <legend>Age</legend>
+            <label for="rad__1">11-15</label>
+            <input type="radio" name="age" id="rad__1">
+            <label for="rad__2">16-20</label>
+            <input type="radio" name="age" id="rad__2">
+            <label for="rad__3">21-25</label>
+            <input type="radio" name="age" id="rad__3">
+        </fieldset>
+
+
+        </form>
+
+    </section>
+   
+   </div> <!-- fin #inscription -->
+   <div id="articles">
+    <section >
+        <h2>Articles</h2>
+        <h3>Les articles de la page</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eos debitis veritatis quo fugiat impedit laborum sunt quod odit id perferendis harum, enim libero aperiam similique. Dolorum obcaecati ipsum ea.</p>
+ 
+    </section>
+   </div> <!--Fin articles-->
+   <div id="galeries">
+    <section >
+        <h2>Galeries</h2>
+        <h3>Les photo de la page</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eos debitis veritatis quo fugiat impedit laborum sunt quod odit id perferendis harum, enim libero aperiam similique. Dolorum obcaecati ipsum ea.</p>
+        <figure class="galeries__figure">
+            <img class="galeries__img" src="images/Goran_Christian_TP3.png" alt="" >
+        </figure>
+        <figur class="galeries__figure">
+            <img class="galeries__img" src="images/IMG_6434.jpeg" alt="" >
+        </figure>
+    </section>
+   </div> <!--Fin galerie-->
+   <div id="videos">
+    <section >
+        <h2>Vidéos</h2>
+        <h3>Les vidéos de la page</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eos debitis veritatis quo fugiat impedit laborum sunt quod odit id perferendis harum, enim libero aperiam similique. Dolorum obcaecati ipsum ea.</p>
+       
+    </section>
+   </div> <!--Fin vidéoss-->
+   <div class="global">
+    <footer class="piedpage">
+        <section class="pied__adresse">
+          <h3>Adresse</h3>
+          <ul>
+            <li>3800 Sherbrooke est</li>
+            <li>Montréal, QC</li>
+            <li>H1X 2A2</li>
+          </ul>
+        </section>
+        <section class="pied__cours">
+          <h3>Cours</h3>
+          <ul>
+            <li>1W1-Mise en page Web</li>
+            <li>1J1-Animation et intéractivité en jeux</li>
+            <li>1M1-Création vidéo</li>
+            <li>1M2-Conception graphique et img matricielle</li>
+          </ul>
+        </section>
+        <section class="pied__resume">
+          <h3>Résumé</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas nihil
+            ipsam rerum aliquid officiis! Nihil hic illum nemo soluta iure
+            possimus reiciendis deserunt. Magni impedit sint harum corporis quia
+            culpa. ipsam rerum aliquid officiis! Nihil hic illum nemo soluta iure
+            possimus reiciendis deserunt. Magni impedit sint harum corporis quia
+            culpa
+          </p>
+        </section>
+        <section class="pied__sociaux">
+            <img src="images/facebook_32.png" alt="">
+            <img src="images/instagram_32.png" alt="">
+            <img src="images/youtube_32.png" alt="">
+        </section>
+      </footer>
+   </div>
+</body>
+</html>

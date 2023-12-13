@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 6vw;
+    background-image: linear-gradient(20deg, #000, white);
+}
+
+
+.entete__logo {
+    display: flex;
+    align-items: center;
+}
+
+.entete__logo img {
+    width: 60px;
+}
+
+.entete__logo h1 {
+    margin-left: 20px
+}
+
+.entete__burger {
+    align-items: center;
+    display: flex;
+}
